@@ -1,0 +1,46 @@
+body{
+    background-color:blueviolet;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.input{
+    color:black;
+    width: 50%;
+    height: 30px;
+    margin-right: 20px;
+    background-color:transparent;
+    border-top:3px solid blueviolet;
+    border-right:3px solid blueviolet;
+    border-left:3px solid blueviolet;
+    border-bottom:1px solid black;
+}
+form{
+    margin-left: 0%;
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    border-top:3px solid blueviolet;
+    border-right:3px solid blueviolet;
+    border-bottom:3px solid blueviolet;
+    border-left:3px solid black;
+    padding: 20px;
+}
+label{
+    font-weight:bold;
+}
+h3{
+    font-size: 38px;
+   
+}
+.btn{
+    color:white;
+    background-color: black;
+    width:30%;
+    padding:10px;
+    border-radius:20px;
+
+}
+a{
+    color:white;
+    margin-left: 10px;
+}
