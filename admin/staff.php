@@ -237,7 +237,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $connection=mysqli_connect('localhost','root','','vehiclemanagement');
+                                                    $connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                                     $sql="select * from staff";
                                                     $query=mysqli_query($connection,$sql);
                                                     while($row=mysqli_fetch_assoc($query))

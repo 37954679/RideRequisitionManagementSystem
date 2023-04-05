@@ -1,6 +1,6 @@
 <?php
 $date=date('d-m-y');
-$connect=mysqli_connect("localhost","root","","vehiclemanagement");
+$connect=mysqli_connect("localhost","root","","ride_requisition_and_management_system");
 if($connect)
 {
     $sqlcheck="select * from Bookings where status='active'";
@@ -17,6 +17,6 @@ else{
 }
 
 else{
-    echo "Error in connecting to the database".mysqli_error();
+    echo "Error in connecting to the database";
 }
 ?>

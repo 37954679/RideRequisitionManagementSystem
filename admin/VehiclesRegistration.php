@@ -68,7 +68,7 @@
         $vehicleType=$_POST['vehicleType'];
         $number=$_POST['numberPlate'];
         $stmt="insert into vehicles(VehicleType,NumberPlate	) values('$vehicleType','$number')";
-        if(mysqli_query(mysqli_connect('localhost','root','','vehiclemanagement'),$stmt))
+        if(mysqli_query(mysqli_connect('localhost','root','','ride_requisition_and_management_system'),$stmt))
         {
             ?>
 <script>

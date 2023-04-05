@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 $driverid=$_POST['id'];
-$connect=mysqli_connect("localhost","root","","vehiclemanagement");
+$connect=mysqli_connect("localhost","root","","ride_requisition_and_management_system");
 $sqlstmt="select * from driver where id='$driverid'";
 $query=mysqli_query($connect,$sqlstmt);
 $row=mysqli_fetch_assoc($query);

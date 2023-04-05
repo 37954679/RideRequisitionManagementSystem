@@ -48,7 +48,7 @@ if(isset($_POST['login']))
 $username=$_POST['username'];
 $password=$_POST['password'];
 $role=$_POST['role'];
-$connection=mysqli_connect('localhost','root','','vehiclemanagement');
+$connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
 if($connection)
 {
 $stmt="select * from users where username='$username' and password='$password' and role='$role'";

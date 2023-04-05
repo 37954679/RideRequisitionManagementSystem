@@ -212,7 +212,7 @@
                                $user=$_SESSION['loggedInUser'];
                                
                                 $sql="select * from driver where Name='$user'";
-                                $connect=mysqli_connect('localhost','root','','vehiclemanagement');
+                                $connect=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                $query=mysqli_query($connect,$sql);
                                $row=mysqli_fetch_assoc($query);
                                if($row['availability']=="available")
@@ -253,7 +253,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $connection=mysqli_connect('localhost','root','','vehiclemanagement');
+                                                    $connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                                     $sql="select bookings.id,bookings.StudentName,bookings.Reason_For_Booking,bookings.date,bookings.status,bookings.VehicleRequested,bookings.Total_Number,bookings.RegNumber,vehicles.NumberPlate from bookings INNER JOIN vehicles ON bookings.VehicleRequested=vehicles.NumberPlate where bookings.approval='Not Proved'";
                                                     $query=mysqli_query($connection,$sql);
                                                     while($row=mysqli_fetch_assoc($query))

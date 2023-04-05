@@ -287,7 +287,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $connection=mysqli_connect('localhost','root','','vehiclemanagement');
+                                                    $connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                                     $sql="select bookings.id,bookings.StudentName,bookings.Reason_For_Booking,bookings.date,bookings.status,bookings.VehicleRequested,bookings.Total_Number,vehicles.NumberPlate from bookings INNER JOIN vehicles ON bookings.VehicleRequested=vehicles.NumberPlate";
                                                     $query=mysqli_query($connection,$sql);
                                                     while($row=mysqli_fetch_assoc($query))

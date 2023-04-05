@@ -167,7 +167,7 @@
                                                     <tbody>
                                                         <?php
                                                         $stmt="select * from driver where availability='available'";
-                                                        $query=mysqli_query(mysqli_connect("localhost","root","","vehiclemanagement"),$stmt);
+                                                        $query=mysqli_query(mysqli_connect("localhost","root","","ride_requisition_and_management_system"),$stmt);
                                                         while($row=mysqli_fetch_assoc($query))
                                                         {
                                                         ?>

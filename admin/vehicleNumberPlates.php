@@ -1,7 +1,7 @@
 <?php require_once "../session.php"; ?>
 <?php
 $type=$_POST['type'];
-$connect=mysqli_connect("localhost","root","","vehiclemanagement");
+$connect=mysqli_connect("localhost","root","","ride_requisition_and_management_system");
 $sqlstmt="select NumberPlate from vehicles where vehicleType='$type'";
 $query=mysqli_query($connect,$sqlstmt);
 if(mysqli_num_rows($query)>0)

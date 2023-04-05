@@ -70,11 +70,11 @@
         
 
         $stmt="insert into staff(Name,Department,StaffNo,Password) values('$Name','$Department','$StaffNo','staff123')";
-        if(mysqli_query(mysqli_connect('localhost','root','','vehiclemanagement'),$stmt))
+        if(mysqli_query(mysqli_connect('localhost','root','','ride_requisition_and_management_system'),$stmt))
         {
             
         $stmt1="insert into users(username,password,role) values('$StaffNo','staff123','staff')";
-        mysqli_query(mysqli_connect('localhost','root','','vehiclemanagement'),$stmt1);
+        mysqli_query(mysqli_connect('localhost','root','','ride_requisition_and_management_system'),$stmt1);
             ?>
 <script>
     alert("Inserted Successfully");

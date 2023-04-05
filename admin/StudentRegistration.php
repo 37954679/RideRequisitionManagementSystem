@@ -76,10 +76,10 @@
         $RegistrationNumber=$_POST['RegistrationNumber'];
         $email=$_POST['Email'];
         $stmt="insert into students(Name,Event,School,RegistrationNumber,email) values('$Name','$Event','$School','$RegistrationNumber','$email')";
-        if(mysqli_query(mysqli_connect('localhost','root','','vehiclemanagement'),$stmt))
+        if(mysqli_query(mysqli_connect('localhost','root','','ride_requisition_and_management_system'),$stmt))
         {
             $sqlstmt="insert into users(username,password,role) values('$RegistrationNumber','student','student')";
-            $query1=mysqli_query(mysqli_connect('localhost','root','','vehiclemanagement'),$sqlstmt);
+            $query1=mysqli_query(mysqli_connect('localhost','root','','ride_requisition_and_management_system'),$sqlstmt);
             ?>
 <script>
     alert("Inserted Successfully");

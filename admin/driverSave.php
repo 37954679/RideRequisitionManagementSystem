@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect("localhost","root","","vehiclemanagement");
+$connect=mysqli_connect("localhost","root","","ride_requisition_and_management_system");
     $username=$_POST['username'];
     $email=$_POST['Email'];
     $phoneNumber=$_POST['PhoneNumber'];

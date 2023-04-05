@@ -9,7 +9,7 @@ require 'vendor/autoload.php';
 $user=$_SESSION['loggedInUser'];
 $StudentReg=$_POST['studentReg'];
 echo $StudentReg;
-$conn=mysqli_connect("localhost","root","","vehiclemanagement");
+$conn=mysqli_connect("localhost","root","","ride_requisition_and_management_system");
 $sql=mysqli_query($conn,"select * from students where RegistrationNumber='$StudentReg'");
 $r=mysqli_num_rows($sql);
 $row=mysqli_fetch_assoc($sql);

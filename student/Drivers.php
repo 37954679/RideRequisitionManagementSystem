@@ -238,7 +238,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $connection=mysqli_connect('localhost','root','','vehiclemanagement');
+                                                    $connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                                     $sql="select * from driver";
                                                     $query=mysqli_query($connection,$sql);
                                                     while($row=mysqli_fetch_assoc($query))
@@ -288,7 +288,7 @@
                                                 </thead>
                                                 <tbody>
                                                 <?php
-                                                    $connection=mysqli_connect('localhost','root','','vehiclemanagement');
+                                                    $connection=mysqli_connect('localhost','root','','ride_requisition_and_management_system');
                                                     $sql="select * from driver where availability='available'";
                                                     $query=mysqli_query($connection,$sql);
                                                     while($row=mysqli_fetch_assoc($query))
